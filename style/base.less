@@ -1,0 +1,161 @@
+@whitish: #F6F6F6;
+@gray: #222222;
+@red: #e61030;
+@dark-red: #80091b;
+
+html, body {
+	background: @gray;
+	color: #F6F6F6;
+	font-family: itc-avant-garde-gothic-pro, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	height: 100%;
+}
+p{
+	font-size: 16px;
+}
+header{
+	background: rgb(128,9,27);
+	background: linear-gradient(0deg, rgba(128,9,27,1) 0%, rgba(230,16,48,1) 100%);
+	border-bottom: 1px solid @red;
+	padding: 15px 30px;
+		.content-wrapper{
+			text-align: center;
+				img{
+					width: 75%;
+				}
+		}
+}
+.total-owned{
+	border-bottom: 1px solid #000;
+	color: @gray;
+	display: block;
+	font-size: 30px;
+	font-weight: 700;
+	padding: 20px 20px;
+	text-align: center;
+	vertical-align: middle;
+		img{
+			display: inline-block;
+			margin-right: 20px;
+			vertical-align: middle;
+			width: 45%;
+		}
+		span{
+			background: @whitish;
+			border: 1px solid @red;
+			border-radius: 5px;
+			box-sizing: border-box;
+			padding: 5px 15px;
+			text-align: right;
+			vertical-align: middle;
+				text.have{
+					color: #09b266;
+				}
+				text.total{
+					color: @red;
+				}
+		}
+}
+nav{
+		ul{
+			background: #000;
+			font-size: 0;
+			text-align: center;
+				li{
+					box-sizing: border-box;
+					display: inline-block;
+					font-size: 20px;
+					font-weight: 700;
+					padding: 15px;
+					text-transform: uppercase;
+					width: 33%;
+				}				
+				li:first-child{
+					border-right: 1px solid #666;
+				}
+				li:last-child{
+					border-left: 1px solid #666;
+				}
+				li.selected{
+					color: @red;
+				}
+		}
+}
+.publication-year{
+	background: rgb(221,221,221);
+	background: linear-gradient(0deg, rgba(221,221,221,1) 0%, rgba(255,255,255,1) 100%);
+	border-bottom: 1px solid #000;
+	color: #222;
+	font-size: 30px;
+	font-weight: 700;
+	padding: 10px 30px;
+	text-align: center;
+}
+.issues{
+	background: rgb(34,34,34);
+	background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(102,102,102,1) 100%); 
+	border-bottom: 1px solid #000;
+		ul{
+			font-size: 0;
+			padding: 15px 30px;
+			text-align: center;
+				li{
+					display: inline-block;
+					font-size: 22px;
+					list-style-type: none;
+					vertical-align: middle;
+					width: 33%;
+						img{
+							background: #222;
+							border: 1px solid #CCC;
+							border-radius: 4px;
+							box-sizing: border-box;
+							padding: 5px;
+							width: 100%;
+						}
+				}
+				li.issue-number{
+					font-weight: 700;
+					text-align: left;
+						span{
+							background: #222;
+							border: 1px solid #666;
+							border-radius: 5px;
+							box-sizing: border-box;
+							display: inline-block;
+							padding: 5px 15px;
+							text-align: center;
+								.year{
+									display: inline-block;
+									color: @red;
+								}
+						}
+				}
+				li.own-it{
+					font-size: 50px;
+					text-align: right;
+						i{
+							background: #222;
+							border: 1px solid #999;
+							border-radius: 100%;
+							box-sizing: border-box;
+							padding: 10px;
+						}
+						.fa-check-circle{
+							color: #09b266;
+						}
+						.fa-times-circle{
+							color: @red;
+						}
+				}
+		}
+}
+.footer {
+	background: url(../images/bg.png);
+	background-size: cover;
+	background-position: -200px 200px; 
+	border-top: 1px solid @red;
+	flex-shrink: 0;
+	padding: 50px 0;
+}
